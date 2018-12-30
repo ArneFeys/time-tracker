@@ -20,12 +20,9 @@ pipeline {
             }
         }
 
-
         stage ('Deployment Stage') {
             steps {
-                withMaven(maven : 'Maven_3') {
-                    sh 'mvn deploy'
-                }
+                sh 'echo not yes configured'
             }
         }
     }
