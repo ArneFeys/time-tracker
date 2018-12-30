@@ -4,7 +4,10 @@ pipeline{
     stages{
         stage ('Compile Stage'){
             steps {
-                    sh 'mvn clean compile'
+                sh 'set M2_HOME = C:\DevTools\Maven\apache-maven-3.6.0'
+                sh 'set PATH=C:\DevTools\Maven\apache-maven-3.6.0\bin'
+                sh 'set PATH=%PATH%;C:\Windows\System32'
+m               sh 'mvn clean package'
             }
         }
         stage ('Testing Stage'){
