@@ -22,7 +22,7 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-                sh 'echo not yes configured'
+                sh 'echo not yet configured'
             }
         }
     }
